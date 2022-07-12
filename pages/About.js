@@ -3,15 +3,13 @@ import { client } from '../lib/client';
 import { urlFor } from '../lib/client';
 
 const About = ({ aboutInfo }) => {
-  console.log(aboutInfo[0]);
   const {
     name,
     aboutText,
     image: {
-      asset: { _ref },
+      asset: { _ref: image },
     },
   } = aboutInfo[0];
-  console.log(_ref);
 
   return (
     <>
@@ -27,10 +25,10 @@ const About = ({ aboutInfo }) => {
       </Head>
 
       <section className=''>
-        <div className='container flex gap-x-28 h-[85vh]  px-[8rem] items-center '>
+        <div className='container flex  gap-x-28 h-[85vh]  px-[8rem] items-center '>
           <img
-            src={urlFor(_ref)}
-            alt='headphones'
+            src={urlFor(image)}
+            alt='owner'
             className='w-[55rem] h-[20rem] rounded-full'
           />
           <div>

@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import { client } from '../lib/client';
 import Articles from '../components/Articles/Articles';
-const Blog = (articles) => {
-  console.log(articles);
+import BlogArticles from '../components/BlogArticles/BlogArticles';
+const Blog = ({ articles }) => {
   return (
     <>
       <Head>
@@ -15,12 +15,9 @@ const Blog = (articles) => {
           rel='stylesheet'
         />
       </Head>
-      {/* <section>
-        <div className='container'>blog</div>
-        {articles.map((item) => {
-          return <Articles articlesData={item} />;
-        })}
-      </section> */}
+      <section>
+        <BlogArticles data={articles} />
+      </section>
     </>
   );
 };

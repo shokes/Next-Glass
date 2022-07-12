@@ -1,5 +1,6 @@
 import React from 'react';
 import Article from '../Article/Article';
+import Link from 'next/link';
 const Articles = ({ articlesData }) => {
   return (
     <section className='container pb-10'>
@@ -12,11 +13,13 @@ const Articles = ({ articlesData }) => {
           );
         })}
       </div>
-      <div className='text-center'>
-        <button className='uppercase bg-[#ffffffb3] border border-white py-2 px-8  rounded-lg'>
-          all posts
-        </button>
-      </div>
+      <Link href='/Blog'>
+        <div className=' text-center'>
+          <button className='uppercase bg-[#ffffffb3] border border-white py-2 px-8  rounded-lg'>
+            all posts
+          </button>
+        </div>
+      </Link>
     </section>
   );
 };
