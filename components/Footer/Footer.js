@@ -9,6 +9,7 @@ const Footer = () => {
             <a
               href='https://twitter.com/Airshokes'
               target='_blank'
+              rel='noreferrer'
               className='underline '
             >
               twitter
@@ -19,6 +20,7 @@ const Footer = () => {
               href='https://github.com/shokes'
               className='underline '
               target='_blank'
+              rel='noreferrer'
             >
               github
             </a>
@@ -30,6 +32,7 @@ const Footer = () => {
             <a
               href='https://twitter.com/Airshokes'
               target='_blank'
+              rel='noreferrer'
               className='underline ml-1 '
             >
               Oshoke Oyati

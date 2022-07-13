@@ -1,8 +1,10 @@
 import Head from 'next/head';
-import { client } from '../lib/client';
-import { urlFor } from '../lib/client';
+import { client, urlFor } from '../lib/client';
+
+import Image from 'next/image';
 
 const About = ({ aboutInfo }) => {
+  console.log(aboutInfo[0]);
   const {
     name,
     aboutText,
@@ -26,10 +28,19 @@ const About = ({ aboutInfo }) => {
 
       <section className=''>
         <div className='container flex  gap-x-28 h-[85vh]  px-[8rem] items-center '>
-          <img
+          {/* <img
             src={urlFor(image)}
             alt='owner'
             className='w-[55rem] h-[20rem] rounded-full'
+          /> */}
+          <Image
+            // src={`/${image}`}
+            // src={urlFor(image)}
+            src={`${urlFor(image)}`}
+            alt='Picture of the author'
+            width={700}
+            height={700}
+            className=' rounded-full'
           />
           <div>
             <h3 className='capitalize font-extrabold text-4xl mb-2'>{name}</h3>

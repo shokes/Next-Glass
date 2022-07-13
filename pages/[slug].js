@@ -1,8 +1,8 @@
 import React from 'react';
 import { client, urlFor } from '../lib/client';
+import Image from 'next/image';
 
 const ArticleDetails = ({ articles }) => {
-  // console.log(articles);
   const {
     name,
     date,
@@ -26,10 +26,13 @@ const ArticleDetails = ({ articles }) => {
         <p className='mt-10 mb-10 text-lg'>{paragraph2}</p>
         <div className='mb-10'>
           <h3 className='font-bold text-4xl mb-3 '>Image</h3>
-          <img
-            src={urlFor(image)}
-            alt='headphones'
-            className='w-[55rem] h-[20rem] '
+
+          <Image
+            src={`${urlFor(image)}`}
+            alt='laptop'
+            width={700}
+            height={400}
+            // className=' rounded-full'
           />
         </div>
         <div className='mb-10'>
@@ -38,10 +41,13 @@ const ArticleDetails = ({ articles }) => {
         </div>
         <div className='mb-10'>
           <h3 className='font-bold text-4xl mb-3 '>Code block</h3>
-          <img
-            src={urlFor(codeBlockImage)}
-            alt='headphones'
-            className='w-[55rem] h-[20rem] '
+
+          <Image
+            src={`${urlFor(codeBlockImage)}`}
+            alt='laptop'
+            width={700}
+            height={400}
+            // className=' rounded-full'
           />
         </div>
         <div>
