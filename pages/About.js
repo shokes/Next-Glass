@@ -28,14 +28,7 @@ const About = ({ aboutInfo }) => {
 
       <section className=''>
         <div className='container flex  gap-x-28 h-[85vh]  px-[8rem] items-center '>
-          {/* <img
-            src={urlFor(image)}
-            alt='owner'
-            className='w-[55rem] h-[20rem] rounded-full'
-          /> */}
           <Image
-            // src={`/${image}`}
-            // src={urlFor(image)}
             src={`${urlFor(image)}`}
             alt='Picture of the author'
             width={700}
