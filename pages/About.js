@@ -49,7 +49,7 @@ export default About;
 
 // fetching the about data from sanity and passing to the about page
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const query = '*[_type == "about" ]';
 
   const aboutInfo = await client.fetch(query);

@@ -30,7 +30,7 @@ export default Home;
 
 // fetching both the herotext and the articles data from sanity and passing to the home page
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const query = '*[_type == "article" ]';
   const queryhero = '*[_type == "hero" ]';
 

@@ -34,14 +34,6 @@ export default Contact;
 
 // fetching the contact data from sanity and passing to the contact page
 
-// export const getServerSideProps = async () => {
-//   const query = '*[_type == "contact" ]';
-
-//   const contactInfo = await client.fetch(query);
-
-//   return { props: { contactInfo } };
-// };
-
 export const getStaticProps = async () => {
   const query = '*[_type == "contact"]';
   const contactInfo = await client.fetch(query);

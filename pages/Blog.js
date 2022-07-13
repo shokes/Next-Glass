@@ -24,7 +24,7 @@ const Blog = ({ articles }) => {
 
 export default Blog;
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const query = '*[_type == "article" ]';
 
   const articles = await client.fetch(query);
