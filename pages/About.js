@@ -4,7 +4,6 @@ import { client, urlFor } from '../lib/client';
 import Image from 'next/image';
 
 const About = ({ aboutInfo }) => {
-  console.log(aboutInfo[0]);
   const {
     name,
     aboutText,
@@ -19,18 +18,13 @@ const About = ({ aboutInfo }) => {
         <title>About - Next Glass</title>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
-
-        <link
-          href='https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap'
-          rel='stylesheet'
-        />
       </Head>
 
       <section className=''>
-        <div className='container flex  gap-x-28 h-[85vh]  px-[8rem] items-center '>
+        <div className='container grid grid-cols-1 gap-14 lg:flex   lg:gap-x-28 py-[9rem]   lg:px-[8rem] items-center '>
           <Image
             src={`${urlFor(image)}`}
-            alt='Picture of the author'
+            alt='author'
             width={700}
             height={700}
             className=' rounded-full'

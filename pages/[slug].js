@@ -1,6 +1,6 @@
-import React from 'react';
 import { client, urlFor } from '../lib/client';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const ArticleDetails = ({ articles }) => {
   const {
@@ -18,8 +18,13 @@ const ArticleDetails = ({ articles }) => {
     },
   } = articles;
   return (
-    <section className='article-container pt-28 pb-14'>
-      <article>
+    <section className=''>
+      <Head>
+        <title>{name}</title>
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
+      </Head>
+      <article className='article-container pt-28 pb-14'>
         <h3 className='font-bold text-4xl mb-1 '>{name}</h3>
         <span className=' text-lg'>{date}</span>
         <p className='mt-10 text-lg '>{paragraph1}</p>

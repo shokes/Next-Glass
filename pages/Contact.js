@@ -18,7 +18,7 @@ const Contact = ({ contactInfo }) => {
       </Head>
 
       <section className=''>
-        <div className='container flex gap-x-28  px-[8rem] items-center my-20 '>
+        <div className='container grid grid-cols-1 lg:flex gap-10  lg:gap-x-28  lg:px-[8rem] items-center my-20 '>
           <div>
             <h3 className='capitalize font-extrabold text-4xl '>{name}</h3>
             <p className='text-lg'>{smallText}</p>

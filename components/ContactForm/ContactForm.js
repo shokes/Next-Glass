@@ -63,7 +63,7 @@ const ContactForm = () => {
       });
   };
   return (
-    <main className='border border-white card p-6 w-[56rem] h-[30rem] rounded-lg'>
+    <main className='border border-white card p-6 w-full  lg:w-[56rem] h-[30rem] rounded-lg'>
       <form onSubmit={handleOnSubmit} className='flex flex-col text-lg '>
         <label htmlFor='name'>Name</label>
         <input

@@ -6,17 +6,17 @@ const Navigation = () => {
     <section>
       <nav className='flex justify-between items-center container pt-7 '>
         <Link href='/'>
-          <a className='font-semibold text-lg tracking-wider'> Next Glass </a>
+          <a className='font-semibold text-lg tracking-wider'> NEXT GLASS </a>
         </Link>
         <div>
-          <ul className='flex  gap-x-3 text-sm lg:gap-x-5  uppercase tracking-wider'>
-            <li>
+          <ul className='flex items-center text-sm   uppercase tracking-wider'>
+            <li className='mr-3 lg:mr-5'>
               {' '}
               <Link href='/Blog'>
                 <a>blog</a>
               </Link>
             </li>
-            <li>
+            <li className='mr-3 lg:mr-5'>
               <Link href='/About'>
                 <a>about</a>
               </Link>

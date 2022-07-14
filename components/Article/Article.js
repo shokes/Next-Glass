@@ -2,18 +2,30 @@ import React from 'react';
 import Link from 'next/link';
 
 const Article = (item) => {
-  console.log(item);
   const {
     name,
     smallText,
     date,
     time,
+    tags,
     slug: { current },
   } = item;
   return (
     <Link href={`/${current}`}>
       <article className='border border-white cursor-pointer  rounded-lg card p-4'>
-        <h3 className='font-bold text-2xl mb-7 h-[5rem]'>{name}</h3>
+        <div className='flex gap-3 mb-3'>
+          {tags &&
+            tags.map((tag, index) => {
+              return (
+                <Link key={index} href={`/Tags/${tag}`}>
+                  <a className='uppercase bg-[#ffffffb3] text-[0.7rem] border border-white py-1 px-3 rounded-sm'>
+                    {tag}
+                  </a>
+                </Link>
+              );
+            })}
+        </div>
+        <h3 className='font-extrabold text-2xl mb-7 h-[5rem]'>{name}</h3>
         <p className='text-lg h-[7rem] '>{smallText}</p>
         <div className='flex justify-between items-center mt-7'>
           <p>{date}</p>

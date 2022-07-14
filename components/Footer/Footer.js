@@ -3,14 +3,14 @@ import React from 'react';
 const Footer = () => {
   return (
     <section className='pb-4  text-sm'>
-      <div className='container flex justify-between items-center'>
-        <ul className='flex items-center gap-x-3 capitalize'>
+      <div className='container flex-col md:flex-row flex justify-between '>
+        <ul className='flex items-center capitalize'>
           <li>
             <a
               href='https://twitter.com/Airshokes'
               target='_blank'
               rel='noreferrer'
-              className='underline '
+              className='underline mr-3 '
             >
               twitter
             </a>
