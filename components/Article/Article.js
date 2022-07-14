@@ -1,7 +1,7 @@
-import React from 'react';
 import Link from 'next/link';
 
 const Article = (item) => {
+  // destructuring useful info from the item passed into the component
   const {
     name,
     smallText,

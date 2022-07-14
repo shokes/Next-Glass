@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from 'next/link';
 
 const Navigation = () => {
@@ -9,7 +8,7 @@ const Navigation = () => {
           <a className='font-semibold text-lg tracking-wider'> NEXT GLASS </a>
         </Link>
         <div>
-          <ul className='flex items-center text-[0.7rem]   uppercase tracking-wider'>
+          <ul className='flex items-center text-[0.7rem] md:text-sm  uppercase tracking-wider'>
             <li className='mr-3 lg:mr-5'>
               {' '}
               <Link href='/Blog'>

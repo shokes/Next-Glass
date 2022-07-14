@@ -1,11 +1,10 @@
-import React from 'react';
 import Article from '../Article/Article';
 import Link from 'next/link';
 
 const BlogArticles = ({ data }) => {
   return (
     <section className='container pb-10'>
-      {/* checking if the articles in the database has been filtered by asking if the articles are less than the total number of articles passed into the database. (might change to a better logic later but this will do for now) */}
+      {/* checking if the articles in the database have been filtered by asking if the articles are less than the total number of articles passed into the database. (might change to a better logic later but this will do for now) */}
       {data.length < 19 || (
         <h3 className='capitalize font-extrabold text-4xl mt-20 mb-7  '>
           Blog.

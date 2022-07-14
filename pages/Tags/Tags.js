@@ -24,7 +24,7 @@ const Tags = ({ articles }) => {
       </Head>
       <div className='container h-[75vh]'>
         <h3 className='capitalize font-extrabold text-4xl mt-20 mb-7  '>
-          all tags
+          all tags.
         </h3>
         <ul>
           {uniqueTags.map((tag, index) => {

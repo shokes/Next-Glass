@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Hero = ({ heroData }) => {
   const { name, smallText } = heroData[0];
 

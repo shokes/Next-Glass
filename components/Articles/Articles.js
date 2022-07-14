@@ -1,10 +1,11 @@
-import React from 'react';
 import Article from '../Article/Article';
 import Link from 'next/link';
+
 const Articles = ({ articlesData }) => {
   return (
     <section className='container pb-10'>
       <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mb-14'>
+        {/* Limiting the number of articles displayed on the homepage to 9 */}
         {articlesData.slice(0, 9).map((item) => {
           return (
             <div key={item.name}>

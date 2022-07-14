@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Footer = () => {
   return (
     <section className='pb-4  text-sm'>

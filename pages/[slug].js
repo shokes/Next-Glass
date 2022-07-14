@@ -25,15 +25,15 @@ const ArticleDetails = ({ articles }) => {
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
       </Head>
       <article className='article-container pt-28 pb-14'>
-        <h3 className='font-bold text-4xl mb-1 '>{name}</h3>
-        <span className=' text-lg'>{date}</span>
-        <p className='mt-10 text-lg '>{paragraph1}</p>
-        <p className='mt-10 mb-10 text-lg'>{paragraph2}</p>
+        <h3 className='font-bold text-4xl mb-1 '>{name && name}</h3>
+        <span className=' text-lg'>{date && date}</span>
+        <p className='mt-10 text-lg '>{paragraph1 && paragraph1}</p>
+        <p className='mt-10 mb-10 text-lg'>{paragraph2 && paragraph2}</p>
         <div className='mb-10'>
           <h3 className='font-bold text-4xl mb-3 '>Image</h3>
 
           <Image
-            src={`${urlFor(image)}`}
+            src={`${urlFor(image && image)}`}
             alt='laptop'
             width={700}
             height={400}
@@ -41,13 +41,13 @@ const ArticleDetails = ({ articles }) => {
         </div>
         <div className='mb-10'>
           <h3 className='font-bold text-4xl mb-1 '>Header</h3>
-          <p>{header}</p>
+          <p>{header && header}</p>
         </div>
         <div className='mb-10'>
           <h3 className='font-bold text-4xl mb-3 uppercase'>Code block</h3>
 
           <Image
-            src={`${urlFor(codeBlockImage)}`}
+            src={`${urlFor(codeBlockImage && codeBlockImage)}`}
             alt='laptop'
             width={700}
             height={400}
@@ -55,7 +55,9 @@ const ArticleDetails = ({ articles }) => {
         </div>
         <div>
           <h3 className='font-bold text-4xl mb-1 uppercase'>Quoted text</h3>
-          <p className='border-[#37292c] border-l-8 pl-3 italic'>{quote}</p>
+          <p className='border-[#37292c] border-l-8 pl-3 italic'>
+            {quote && quote}
+          </p>
         </div>
       </article>
     </section>

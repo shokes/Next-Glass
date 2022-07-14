@@ -32,45 +32,6 @@ const Tags = ({ articles }) => {
 
 export default Tags;
 
-// choosing to use get static props becausse i want the data prerendered and be very fast. Also because the data is coming from a CMS.
-
-// export const getStaticPaths = async () => {
-//   const query = `*[_type == "article"] {
-//     slug {
-//       current
-//     }
-//   }`;
-
-//   const articles = await client.fetch(query);
-//   const paths = articles.map((article) => ({
-//     params: {
-//       slug: article.slug.current,
-//     },
-//   }));
-//   return {
-//     paths,
-//     fallback: 'blocking',
-//   };
-// };
-
-//from here
-
-// export const getStaticPaths = async () => {
-//   const query = '*[_type == "article"]';
-
-//   const articles = await client.fetch(query);
-//   const paths = articles.map((article) => ({
-//     params: { tag: article.tag },
-//     // params: {
-//     //   tag: article.tag,
-//     // },
-//   }));
-//   return {
-//     paths,
-//     fallback: 'blocking',
-//   };
-// };
-
 export const getServerSideProps = async () => {
   const query = '*[_type == "article"]';
   const articles = await client.fetch(query);
