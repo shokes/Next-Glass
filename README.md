@@ -17,7 +17,7 @@ A minimal and beautiful NextJS personal blog with nice glassmorphism user interf
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yinkakun/gatsby-starter-glass
+git clone https://github.com/shokes/Next-Glass
 
 # 2. Navigate into repository
 cd next-glass
