@@ -16,13 +16,13 @@ const Tags = ({ articles }) => {
   return (
     <section>
       <Head>
-        <title>Tagged '{Tags}'</title>
+        <title>Tagged &apos;{Tags}&apos;</title>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
       </Head>
       <div className='container'>
         <h3 className='capitalize font-extrabold text-4xl mt-20 mb-7  '>
-          posts tagged "{Tags}"
+          posts tagged &quot;{Tags}&quot;
         </h3>
         <BlogArticles data={taggedArticles} />
       </div>
