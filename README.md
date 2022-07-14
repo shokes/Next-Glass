@@ -4,7 +4,7 @@ A minimal and beautiful NextJS personal blog with nice glassmorphism user interf
 
 [View Live Demo](https://next-glass-gamma.vercel.app/)
 
-![demo site screenshot](./screenshot.png)
+![demo site screenshot](./nextGlass.png)
 
 ## Features
 
