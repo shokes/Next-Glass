@@ -56,15 +56,11 @@ export default Tags;
 //from here
 
 // export const getStaticPaths = async () => {
-//   const query = `*[_type == "article"] {
-//     tag {
-//       current
-//     }
-//   }`;
+//   const query = '*[_type == "article"]';
 
 //   const articles = await client.fetch(query);
 //   const paths = articles.map((article) => ({
-//     params: { tag: article.tag.current.toString() },
+//     params: { tag: article.tag },
 //     // params: {
 //     //   tag: article.tag,
 //     // },

@@ -13,12 +13,12 @@ const Article = (item) => {
   return (
     <Link href={`/${current}`}>
       <article className='border border-white cursor-pointer  rounded-lg card p-4'>
-        <div className='flex gap-3 mb-3'>
+        <div className='flex  mb-3'>
           {tags &&
             tags.map((tag, index) => {
               return (
                 <Link key={index} href={`/Tags/${tag}`}>
-                  <a className='uppercase bg-[#ffffffb3] text-[0.7rem] border border-white py-1 px-3 rounded-sm'>
+                  <a className='uppercase bg-[#ffffffb3] text-[0.7rem] border mr-3 border-white py-1 px-3 rounded-sm'>
                     {tag}
                   </a>
                 </Link>

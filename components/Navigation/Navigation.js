@@ -9,7 +9,7 @@ const Navigation = () => {
           <a className='font-semibold text-lg tracking-wider'> NEXT GLASS </a>
         </Link>
         <div>
-          <ul className='flex items-center text-sm   uppercase tracking-wider'>
+          <ul className='flex items-center text-[0.7rem]   uppercase tracking-wider'>
             <li className='mr-3 lg:mr-5'>
               {' '}
               <Link href='/Blog'>

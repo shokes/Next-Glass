@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <section className='pb-4  text-sm'>
       <div className='container flex-col md:flex-row flex justify-between '>
-        <ul className='flex items-center capitalize'>
+        <ul className='flex items-center capitalize mb-3 lg:mb-0'>
           <li>
             <a
               href='https://twitter.com/Airshokes'
