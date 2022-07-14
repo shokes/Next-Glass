@@ -22,7 +22,8 @@ const Tags = ({ articles }) => {
       </Head>
       <div className='container'>
         <h3 className='capitalize font-extrabold text-4xl mt-20 mb-7  '>
-          posts tagged &quot;{Tags}&quot;
+          {taggedArticles.length} {taggedArticles.length < 2 ? 'post' : 'posts'}{' '}
+          tagged &quot;{Tags}&quot;
         </h3>
         <BlogArticles data={taggedArticles} />
       </div>

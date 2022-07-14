@@ -1,6 +1,6 @@
 # Next Glass
 
-A minimal and beautiful NextJS personal blog with nice glassmorphism user interface.
+A minimal and beautiful NextJS personal blog with a nice glassmorphism user interface.
 
 [View Live Demo](https://next-glass-gamma.vercel.app/)
 
