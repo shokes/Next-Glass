@@ -1,6 +1,6 @@
 # Next Glass
 
-A minimal and beautiful NextJS personal blog with a nice glassmorphism user interface.
+A minimal and beautiful NextJS personal blog with a nice glassmorphism user interface. The contents are managed with Sanity.
 
 [View Live Demo](https://next-glass-gamma.vercel.app/)
 
@@ -34,3 +34,9 @@ npm run dev
 - NextJS for Static Site Generation
 - Sanity CMS for content management
 - TailwindCSS for styling
+
+## Author
+
+👤 **Oshoke Oyati**
+
+- Website: https://oshoke.vercel.app/
